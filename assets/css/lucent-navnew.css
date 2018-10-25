@@ -1,0 +1,119 @@
+.lucentslidemenu_wrapper {
+    position: absolute;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0
+}
+
+.lucentslidemenu_wrapper .levelHolderClass {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    background: white;
+    width: auto;
+    min-height: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+    zoom: 1;
+}
+
+.lucentslidemenu_wrapper .ltr {
+    margin-left: -100%;
+    left: 0;
+    -moz-box-shadow: 5px 0 5px -5px #999999;
+    -webkit-box-shadow: 5px 0 5px -5px #999999;
+    box-shadow: 5px 0 5px -5px #999999;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#999999, direction=90, strength=2);
+}
+
+.lucentslidemenu_wrapper .rtl {
+    margin-right: -100%;
+    right: 0;
+    -moz-box-shadow: 5px 0 5px 5px #999999;
+    -webkit-box-shadow: 5px 0 5px 5px #999999;
+    box-shadow: 5px 0 5px 5px #999999;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#999999, direction=270, strength=2);
+}
+
+.lucentslidemenu_wrapper {
+    -moz-box-shadow: 5px 0 5px 5px #999999;
+    -webkit-box-shadow: 5px 0 5px 5px #999999;
+    box-shadow: 5px 0 5px 5px #999999;
+}
+
+.lucentslidemenu_wrapper .lucentslidemenu_inactive {
+    background: white;
+}
+
+.lucentslidemenu_wrapper h2 {
+    font-size: 16px;
+    line-height: 1em;
+    font-weight: normal;
+    color: white;
+    padding: 0 .4em 0 .4em;
+}
+
+.lucentslidemenu_wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lucentslidemenu_wrapper li {
+    cursor: pointer;
+    border-top: 1px solid #888888;
+    padding: .4em .4em .4em .4em;
+}
+
+.lucentslidemenu_wrapper li:last-child {
+    border-bottom: 1px solid #888888;
+}
+
+.lucentslidemenu_wrapper li:hover {
+    background-color: #888888;
+}
+
+.lucentslidemenu_wrapper a {
+    display: block;
+    outline: none;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1em;
+    padding: .2em .2em;
+    text-decoration: none;
+    color: #999;
+}
+
+.lucentslidemenu_wrapper a:hover {
+    color: #999;
+}
+
+.lucentslidemenu_wrapper .backItemClass {
+    display: block;
+    padding: .4em .4em .4em .4em;
+    background: white;
+    border-top: 1px solid #888888;
+}
+
+.lucentslidemenu_wrapper .floatRight {
+    float: right;
+}
+
+.lucentslidemenu_wrapper .floatLeft {
+    float: left;
+}
+
+.lucentslidemenu_wrapper .cursorPointer {
+    cursor: pointer;
+}
+
+.lucentslidemenu_wrapper .iconSpacing_ltr {
+    padding: 0 .4em 0 0;
+}
+
+.lucentslidemenu_wrapper .iconSpacing_rtl {
+    padding: 0 0 0 .4em;
+}

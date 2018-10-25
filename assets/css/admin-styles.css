@@ -1,0 +1,57 @@
+/**
+ *
+ * Admin Styles
+ *
+ * @package Lucent
+ */
+
+ #tcb-content {
+     background: white;
+     padding: 10px;
+     width: 90%;
+     margin: 10px auto;
+     height: 100%;
+ }
+
+ .tcb-table {
+     width: 90%;
+     border: 1px solid #DDD;
+     margin: 0 auto;
+ }
+ .tcb-table th {
+     padding: 10px 0;
+     font-size: 16px;
+     border-bottom: 1px solid #DDD;
+ }
+ .tcb-table td {
+     width: 50%;
+     padding: 8px;
+ }
+
+ .tcb-status {
+     border: 1px solid #DDD;
+     margin: 0;
+     padding: 0;
+     position: relative;
+     display: block;
+     overflow: hidden;
+ }
+
+ .tcb-status h3 {
+     width: 100%;
+     color: white;
+     background: #0b91da;
+     padding: 10px 0 10px 10px;
+     margin: 0;
+     cursor: pointer;
+     border-top: 1px solid #DDD;
+     font-weight: 400;
+ }
+
+ .ui-accordion-header-active {
+     background: #F7747B !important;
+ }
+
+ .ui-accordion-content {
+     padding: 10px;
+ }

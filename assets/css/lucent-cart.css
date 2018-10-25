@@ -1,0 +1,188 @@
+/*****************************************
+ *
+ * Custom WooCommerce Cart Styles
+ *
+ * @package Lucent
+ */
+
+
+/********** Slide In Cart ***************/
+
+.lucentsidecart-content {
+    padding: 8px;
+}
+
+.lucentsidecart .close .btn-close {
+    background: #cf2828;
+    float: right;
+    box-shadow: none;
+}
+
+.lucentsidecart .close::after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.lucentsidecart-right {
+    right: 0;
+    text-align: right;
+}
+
+.lucentsidecart-wrapper {
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1em;
+}
+
+.woocommerce .slidein-apply-coupon,
+.woocommerce .slidein-update-cart {
+    float: none;
+    width: 90%;
+    margin: 2% auto;
+    display: block;
+}
+
+.lucent-cart form,
+.slidein_button_wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.full-cart-button,
+.wc-elegant-to-checkout a {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 0;
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.close-cart {
+    font-weight: normal;
+    padding-top: 11px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: 80%;
+    background: red;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    border-radius: 50%;
+}
+
+.close-cart i {
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 1px 1px 0 rgba(140, 140, 140, 0.6), -1px -1px 1px rgba(140, 140, 140, 0.67);
+}
+
+.lucentsidecart .product-thumbnail {
+    width: 30%;
+    padding: 5px;
+}
+
+.lucentsidecart .name-quantity {
+    width: 60%;
+    padding: 5px;
+}
+
+.lucentsidecart .product-removal {
+    width: 30%;
+    padding: 5px;
+}
+
+.lucentsidecart .cart_item {
+    margin: 8px 0;
+    border-bottom: 1px solid #000;
+}
+
+.slidein-quantity .minus,
+.slidein-quantity .plus {
+    display: none;
+}
+
+.slidein-quantity .qty {
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 8px;
+    text-align: center;
+}
+
+.slidein-coupon {
+    padding: 10px;
+}
+
+.slidein-coupon-input {
+    padding: 5px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.slidein-product-price {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.slidein-product-total {
+    display: block;
+    vertical-align: text-bottom;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.slidein-remove {
+    display: block;
+    width: 95%;
+    margin-right: 20px;
+}
+
+.slidein-collaterals {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+
+.empty-cart-text {
+    width: 95%;
+    padding: 8px;
+}
+
+.empty-text {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.slidein-continue-button {
+    width: 95%;
+}
+
+#lucentslideoutcart td {
+    width: 33.33%
+}
+
+.popupcart-button-wrapper {
+    margin-bottom: 10px
+}
+.popupcart-button-wrapper .wc-full-cart,
+.popupcart-button-wrapper .wc-elegant-to-checkout {
+        width: 49%;
+        display: inline-block;
+}

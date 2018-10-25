@@ -1,0 +1,199 @@
+/***********************************************
+ *
+ * Layout styles
+ *
+ ***********************************************/
+
+
+/** Content **/
+
+.lucent-boxed {
+    margin: 0 auto;
+    border: 1px solid #DDD;
+    overflow: hidden;
+}
+
+.lucentmain {
+    background: #444;
+}
+
+
+/*** .Sidebar | .lucent-aside */
+
+.lucent-aside .content_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lucent-aside .sections_group {
+    width: 75%;
+    float: left;
+}
+
+.lucent-aside .section_wrapper {
+    width: 100%;
+}
+
+.lucent-aside .four.columns {
+    float: right;
+}
+
+.aside_left .sections_group {
+    float: right;
+}
+
+.aside_left .four.columns {
+    float: left;
+}
+
+
+/*** Sidebar - Both | .aside_both */
+
+.aside_both .sections_group {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.aside_both .sidebar.columns {
+    width: 18%;
+}
+
+.aside_both .sidebar-1 {
+    float: left !important;
+    margin-left: -79%;
+}
+
+
+/*** Extra Content */
+
+.extra_content .the_content_wrapper {
+    margin: 0 1%;
+}
+
+.extra_content .has_content .the_content_wrapper,
+.extra_content .category_description .the_content_wrapper {
+    margin-bottom: 40px;
+}
+
+
+/*** 
+ * Columns
+ */
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+    display: block;
+}
+
+.grid-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+    background: white;
+    border: 1px solid #DDD;
+}
+
+.column-item {
+    padding: 8px;
+}
+
+.grid-item-content {
+    padding: 10px;
+}
+
+.archive-images {
+    padding: 5px;
+}
+
+.grid .col-2 {
+    width: 48.5%
+}
+
+.grid .col-3 {
+    width: 32.5%
+}
+
+.grid .col-4 {
+    width: 24.5%
+}
+
+.grid .col-5 {
+    width: 19.5%
+}
+
+.grid .col-6 {
+    width: 16%
+}
+
+.list {
+    padding: 0
+}
+
+.lucent-2.column {
+    width: 48%;
+}
+
+.lucent-summary.column {
+    width: 45%;
+}
+
+.lucent-1-3.column {
+    width: 45%;
+}
+
+.lucent-2-3.column {
+    width: 50%;
+}
+
+.lucent-3-4.column {
+    width: 73%;
+}
+
+.lucent-4-5.column {
+    width: 78%;
+}
+
+.lucent-5-6.column {
+    width: 81.333%;
+}
+
+.lucent-1.column {
+    width: 100%;
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.list-item {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 20px 0;
+    position: relative;
+    background: white;
+}
+
+.list-item-content .archive-images {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 30px 10px 10px;
+    padding: 8px;
+    border: 1px solid #DDD;
+}
+
+.list-item-content .archive-desc {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+}

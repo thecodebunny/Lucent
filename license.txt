@@ -1,0 +1,16 @@
+This theme uses below licensed source codes.
+
+1. Navigation 
+    Lucent uses Stellarnav js licensed under MIT
+    Lucent Push styles are inspired from Multi Level Push Menu licensed under MIT - info multi-level-push-menu.make.rs
+
+2. PeHaa Themes Page Builder
+
+    The Page builder used in this theme is based on PeHaa Themes Page Builder. Thanks to contributers at pehaa we were able to provide a great feature included with this theme.
+    PeHaa Page Builder is based on GPLv2 or later license. more information can be found at http://www.gnu.org/licenses/gpl-2.0.html.
+
+3. The icons used in this theme are based on Icomoon App free icons. For more information please visit icomoon.io
+
+4. Server Status checker is based on https://github.com/SlaSerX/PHP-Server-Status published under GPL-2.0 license.
+
+5. Izimodal developed by Lucas Marques with Apache 2.0 License - http://www.apache.org/licenses/

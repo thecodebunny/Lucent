@@ -1,0 +1,539 @@
+.lucentnav {
+    position: relative;
+    width: 100%;
+    z-index: 12;
+    line-height: normal;
+}
+
+.lucentnav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.lucentnav li {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.lucentnav li a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: inherit;
+    font-family: inherit;
+    box-sizing: border-box;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+
+/* main level */
+
+.lucentnav>ul>li {
+    display: inline-block;
+}
+
+.lucentnav>ul>li>a {
+    padding: 10px 25px;
+}
+
+
+/* first level dd */
+
+.lucentnav ul ul {
+    top: auto;
+    width: 220px;
+    position: absolute;
+    z-index: 13;
+    text-align: left;
+    display: none;
+    background: #ddd;
+}
+
+.lucentnav li li {
+    display: block;
+}
+
+
+/* second level dd */
+
+.lucentnav ul ul ul {
+    top: 0;
+    left: 0;
+    position: relative
+}
+
+.lucentnav>ul>li:hover>ul>li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+}
+
+
+/* .drop-left */
+
+.lucentnav>ul>li.drop-left>ul {
+    right: 0;
+}
+
+.lucentnav li.drop-left ul ul {
+    left: auto;
+    right: 220px;
+}
+
+
+/* only used when 'scrollbarFix' is set to true in the js. This fixes horizontal scrollbar caused by the dd menus that are very long.*/
+
+body.lucentnav-noscroll-x {
+    overflow-x: hidden;
+}
+
+
+/* general styling */
+
+.lucentnav li li.has-sub>a:after {
+    margin-left: 10px;
+}
+
+.lucentnav li.drop-left li.has-sub>a:after {
+    float: left;
+    margin-right: 10px;
+}
+
+.lucentnav.hide-arrows li.has-sub>a:after,
+.lucentnav.hide-arrows li li.has-sub>a:after,
+.lucentnav.hide-arrows li.drop-left li.has-sub>a:after {
+    display: none;
+}
+
+.lucentnav .menu-toggle,
+.lucentnav .close-menu,
+.lucentnav .call-btn-mobile,
+.lucentnav .location-btn-mobile {
+    display: none;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.lucentnav a.an-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+.lucentnav .an-toggle i {
+    position: absolute;
+    margin: auto;
+    top: 55%;
+    left: 0;
+    right: 5px;
+    -webkit-transition: transform .5s ease-out;
+    -moz-transition: transform .5s ease-out;
+    transition: transform .5s ease-out;
+}
+
+.lucentnav.mobile>ul>li>a.an-toggle {
+    padding-top: 15px;
+    margin-right: 20px;
+}
+
+.lucentnav li.call-btn-mobile,
+.lucentnav li.location-btn-mobile {
+    display: none;
+}
+
+.lucentnav li.open>a.an-toggle i {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+
+/* Fallback for slow javascript */
+
+@media only screen and (max-width: 768px) {
+    .lucentnav {
+        overflow: hidden;
+        display: block;
+    }
+    .lucentnav ul {
+        position: relative;
+        display: none;
+    }
+}
+
+
+/* mobile nav */
+
+.lucentnav .menu-toggle,
+.lucentnav .call-btn-mobile,
+.lucentnav .location-btn-mobile {
+    color: #777;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.lucentnav .full {
+    width: 100%;
+}
+
+.lucentnav .half {
+    width: 50%;
+}
+
+.lucentnav .third {
+    width: 33%;
+    text-align: center;
+}
+
+.lucentnav .location-btn-mobile.third {
+    text-align: center;
+}
+
+.lucentnav .location-btn-mobile.half {
+    text-align: right;
+}
+
+.lucentnav.mobile {
+    position: static;
+}
+
+.lucentnav.mobile.fixed {
+    position: static;
+}
+
+.lucentnav.mobile ul {
+    position: relative;
+    display: none;
+}
+
+.lucentnav.mobile.active {
+    padding-bottom: 0;
+}
+
+.lucentnav.mobile.active>ul {
+    display: block;
+}
+
+.lucentnav.mobile ul {
+    text-align: left;
+}
+
+.lucentnav.mobile>ul>li {
+    display: block;
+}
+
+.lucentnav.mobile>ul>li>a {
+    padding: 15px;
+}
+
+.lucentnav.mobile ul {
+    background: rgba(221, 221, 221, 1);
+}
+
+.lucentnav.mobile ul ul {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+    display: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+}
+
+.lucentnav.mobile ul ul ul {
+    left: auto;
+    top: auto;
+}
+
+.lucentnav.mobile li.drop-left ul ul {
+    right: auto;
+}
+
+.lucentnav.mobile li a {
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.lucentnav.mobile li.has-sub a {
+    padding-right: 50px;
+}
+
+.lucentnav.mobile>ul {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    z-index: 1;
+}
+
+.lucentnav.mobile li a.an-toggle {
+    border: 0;
+}
+
+.lucentnav.mobile .menu-toggle,
+.lucentnav.mobile .an-toggle,
+.lucentnav.mobile .close-menu,
+.lucentnav.mobile .call-btn-mobile,
+.lucentnav.mobile .location-btn-mobile {
+    display: inline-block;
+}
+
+.lucentnav.mobile li.call-btn-mobile {
+    border-right: 1px solid rgba(255, 255, 255, .1);
+    box-sizing: border-box;
+}
+
+.lucentnav.mobile li.call-btn-mobile,
+.lucentnav.mobile li.location-btn-mobile {
+    display: inline-block;
+    width: 50%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.lucentnav.mobile li.call-btn-mobile.full,
+.lucentnav.mobile li.location-btn-mobile.full {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    border-right: 0;
+    text-align: left;
+}
+
+.lucentnav.mobile li.call-btn-mobile i,
+.lucentnav.mobile li.location-btn-mobile i {
+    margin-right: 5px;
+}
+
+.lucentnav.mobile.top {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.lucentnav.mobile li.has-sub>a:after,
+.lucentnav.mobile li li.has-sub>a:after,
+.lucentnav.mobile li.drop-left li.has-sub>a:after {
+    display: none;
+}
+
+
+/* mobile nav */
+
+@media only screen and (max-width: 420px) {
+    .lucentnav.mobile .call-btn-mobile.third span,
+    .lucentnav.mobile .location-btn-mobile.third span {
+        display: none;
+    }
+}
+
+
+/** Vertical Navigation **/
+
+.LucentVertical {
+    padding: 20px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.toggle-LucentVertical {
+    display: none;
+}
+
+.LucentVertical li:last-child {
+    border-bottom: 0;
+}
+
+.LucentVertical li {
+    border-bottom: 1px solid #DDD;
+    padding: 10px 0;
+}
+
+.LucentVertical li a {
+    padding-bottom: 10px;
+}
+
+.LucentVertical ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.LucentVertical ul li {
+    border-top: 1px solid #DDD;
+    border-bottom: 0;
+}
+
+.LucentVertical ul li a {
+    display: block;
+    padding: 10px 0;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.LucentVertical ul ul {
+    border-bottom: none
+}
+
+.LucentVertical ul ul li {
+    border-top: 1px solid #DDD;
+    border-bottom: 0;
+}
+
+.LucentVertical ul ul li a {
+    display: block;
+    font-size: 1em;
+    line-height: normal;
+}
+
+.LucentVertical ul ul ul {
+    border-top: 1px solid #46CFB0;
+    border-bottom: 0;
+}
+
+.LucentVertical ul ul ul li {
+    border: none;
+}
+
+.LucentVertical ul ul ul li a {
+    padding-left: 3.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+ul li.has-subnav .LucentVertical-btn {
+    color: #999;
+    background: rgba(255, 255, 255, 0.15);
+    font-size: 16px;
+    border-left: 1px solid #DDD;
+}
+
+.lucentslidemenu_wrapper {
+    position: absolute;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0
+}
+
+.lucentslidemenu_wrapper .levelHolderClass {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    background: white;
+    width: auto;
+    min-height: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+    zoom: 1;
+}
+
+.lucentslidemenu_wrapper .ltr {
+    margin-left: -100%;
+    left: 0;
+    filter: progid: DXImageTransform.Microsoft.Shadow(color=#999999, direction=90, strength=2);
+}
+
+.lucentslidemenu_wrapper .rtl {
+    margin-right: -100%;
+    right: 0;
+    -moz-box-shadow: 5px 0 5px 5px #999999;
+    -webkit-box-shadow: 5px 0 5px 5px #999999;
+    box-shadow: 5px 0 5px 5px #999999;
+    filter: progid: DXImageTransform.Microsoft.Shadow(color=#999999, direction=270, strength=2);
+}
+
+.lucentslidemenu_wrapper .lucentslidemenu_inactive {
+    background: white;
+}
+
+.lucentslidemenu_wrapper h2 {
+    font-size: 16px;
+    line-height: 1em;
+    font-weight: normal;
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.lucentslidemenu_wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lucentslidemenu_wrapper li {
+    cursor: pointer;
+    border-top: 1px solid #888888;
+    padding: .4em .4em .4em .4em;
+}
+
+.lucentslidemenu_wrapper li:last-child {
+    border-bottom: 1px solid #888888;
+}
+
+.lucentslidemenu_wrapper li:hover {
+    background-color: #888888;
+}
+
+.lucentslidemenu_wrapper a {
+    display: block;
+    outline: none;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1em;
+    padding: .2em .2em;
+    text-decoration: none;
+    color: #999;
+}
+
+.lucentslidemenu_wrapper a:hover {
+    color: #999;
+}
+
+.lucentslidemenu_wrapper .backItemClass {
+    display: block;
+    padding: .4em .4em .4em .4em;
+    background: white;
+    border-top: 1px solid #888888;
+}
+
+.lucentslidemenu_wrapper .floatRight {
+    float: right;
+}
+
+.lucentslidemenu_wrapper .floatLeft {
+    float: left;
+}
+
+.lucentslidemenu_wrapper .cursorPointer {
+    cursor: pointer;
+}
+
+.lucentslidemenu_wrapper .iconSpacing_ltr {
+    padding: 0 .4em 0 0;
+}
+
+.lucentslidemenu_wrapper .iconSpacing_rtl {
+    padding: 0 0 0 .4em;
+}
