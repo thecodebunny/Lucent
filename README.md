@@ -7,6 +7,7 @@ Demo <a href="http://lucent.thecodebunny.com" target="_blank">LUCENT WP THEME</a
 
 ## Features Include
 •	15 Header types </br>
+•	9 Header Box Shadows…</br>
 •	Redux Options Framework</br>
 •	WooCommerce Ready</br>
 •	Google Fonts</br>
@@ -17,5 +18,6 @@ Demo <a href="http://lucent.thecodebunny.com" target="_blank">LUCENT WP THEME</a
 ## To Do
 •	Have to add footer styles</br>
 •	Mode decent work on WooCommerce integration</br>
+•	Redux Options presentation in Backend (Have to setup proper images for image select fields)</br>
 •	…
 
